@@ -3,7 +3,7 @@ from PIL import Image
 import tflite_runtime.interpreter as tflite
 
 # Load TFLite model
-interpreter = tf.lite.Interpreter(model_path="model/model.tflite")
+interpreter = tflite.Interpreter(model_path="model/model.tflite")
 interpreter.allocate_tensors()
 
 input_details = interpreter.get_input_details()
