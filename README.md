@@ -1,4 +1,5 @@
 Welcome to the AI image detector, where a light-weight MobileNetV2 model decides whether the image you uploaded is REAL or FAKE.
+
 Sounds Interesting?
 
 Try it out here: https://ai-image-detector-lnej.onrender.com/
