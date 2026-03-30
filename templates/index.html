@@ -44,16 +44,6 @@
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
         }
 
-        h2 {
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        input[type="file"] {
-            margin: 15px 0;
-            color: white;
-        }
-
         button {
             background: linear-gradient(135deg, #00c9a7, #00b4d8);
             border: none;
@@ -64,13 +54,11 @@
             border-radius: 10px;
             cursor: pointer;
             transition: 0.3s ease;
-            margin-top: 10px;
             width: 100%;
         }
 
         button:hover {
             transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
         }
 
         img {
@@ -101,10 +89,10 @@
     <div class="container">
         <h2>AI Image Detector</h2>
 
-        <form method="POST" enctype="multipart/form-data">
+        <form method="POST" enctype="multipart/form-data" onsubmit="showLoading()">
             <input type="file" name="image" accept="image/*" onchange="previewImage(event)" required>
-            <br>
-            <button type="submit">Predict</button>
+            <br><br>
+            <button id="predictBtn" type="submit">Predict</button>
         </form>
 
         <!-- Image Preview -->
@@ -129,6 +117,10 @@
                 img.style.display = "block";
             }
             reader.readAsDataURL(event.target.files[0]);
+        }
+
+        function showLoading() {
+            document.getElementById("predictBtn").innerText = "Processing...";
         }
     </script>
 
