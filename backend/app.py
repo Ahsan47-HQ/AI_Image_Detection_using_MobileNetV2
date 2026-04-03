@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from backend.predict import predict
+from predict import predict
 from PIL import Image
 
 app = Flask(__name__)
