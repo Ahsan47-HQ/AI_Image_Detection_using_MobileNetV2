@@ -3,3 +3,5 @@
 /data
 train.py
 split_dataset.py
+/scripts
+convert_to_tflite.py
