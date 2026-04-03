@@ -1,3 +1,4 @@
+flask-cors
 flask
 tflite-runtime==2.14.0
 numpy==1.26.4
