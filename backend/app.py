@@ -6,6 +6,10 @@ from PIL import Image
 app = Flask(__name__)
 CORS(app)
 
+@app.route("/")
+def home():
+    return "API is running"
+
 @app.route("/predict", methods=["POST"])
 def predict_api():
     file = request.files["image"]
