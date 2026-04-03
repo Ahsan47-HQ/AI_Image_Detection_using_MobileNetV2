@@ -2,8 +2,11 @@ Welcome to the AI image detector, where a light-weight MobileNetV2 model decides
 
 Sounds Interesting?
 
-Try it out here: https://ai-image-detector-lnej.onrender.com/
+Try it out here: https://ai-image-detector-zeta.vercel.app/
 
-Important Note:
-Since this is deployed on free-tier Render, there may be a cold start due to prolonged inactivity, and slower inference than paid plans.
-But apart from that, you can use this free tool anywhere anytime :)
+  
+**Architecture**:    
+
+--> Frontend: React + Vite ( deployed on Vercel)  
+--> Backend: Python + Flask API (deployed on Render)  
+--> Framework Used: Tensorflow  
