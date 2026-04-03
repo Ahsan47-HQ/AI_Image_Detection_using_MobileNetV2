@@ -24,7 +24,7 @@ function App() {
     formData.append("image", file);
 
     try {
-      const res = await fetch("https://ai-image-detector-lnej.onrender.com/predict", {
+      const res = await fetch("https://ai-image-detector-lpi0.onrender.com/predict", {
         method: "POST",
         body: formData,
       });
