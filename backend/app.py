@@ -8,7 +8,7 @@ CORS(app)
 
 @app.route("/")
 def home():
-    return "API is running" 
+    return "OK",200
 
 @app.route("/predict", methods=["POST"])
 def predict_api():
